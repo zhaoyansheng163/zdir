@@ -31,6 +31,7 @@
                             <li class="layui-nav-item"><a href="https://imgurl.org/" title = "免费图床ImgURL"><i class="layui-icon">&#xe64a;</i> 免费图床</a></li>
                             
                             <li class="layui-nav-item"><a href="./functions/admin.php"><i class="layui-icon">&#xe665;</i> 文件管理</a></li>
+                            <li class="layui-nav-item"><a href="?logout=1"><i class="fa fa-file-text" aria-hidden="true"></i> 退出</a></li>
                             <li class="layui-nav-item"><a href="https://www.xiaoz.me/archives/10465" target = "_blank"><i class="layui-icon">&#xe60b;</i> 关于</a></li>
                         </ul>
                     </div>

@@ -386,6 +386,12 @@
 		$use_auth = false;
 	}
 
+	// logout
+if (isset($_GET['logout'])) {
+    unset($_SESSION[FM_SESSION_ID]['logged']);
+    fm_redirect(FM_SELF_URL);
+}
+
 	unset($p, $use_auth, $iconv_input_encoding, $use_highlightjs, $highlightjs_style);
 	
 	//----------------------------------------------
