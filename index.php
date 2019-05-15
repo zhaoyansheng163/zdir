@@ -39,13 +39,13 @@
 							//echo "<script language=javascript>alert('对不起! -if mima ok');</script>";
 								$_SESSION[FM_SESSION_ID]['logged'] = $_POST['fm_usr'];
 								fm_set_msg('You are logged in');
-								$use_auth = false;
+								//$use_auth = false;
 								//fm_redirect(FM_SELF_URL . '?p=');
 						} else {
 							//echo "<script language=javascript>alert('对不起! -if mima error');</script>";
 								unset($_SESSION[FM_SESSION_ID]['logged']);
 								fm_set_msg('Login failed. Invalid username or password', 'error');
-
+								//fm_redirect(FM_SELF_URL);
 								fm_show_header_login();
 								fm_show_message();
 								?>
@@ -108,7 +108,7 @@
 
 						}
 				} else {
-					echo "<script language=javascript>alert('对不起! -if else');</script>";
+					//echo "<script language=javascript>alert('对不起! -if else');</script>";
 						fm_set_msg('password_hash not supported, Upgrade PHP version', 'error');;
 						
 				}
